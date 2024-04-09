@@ -11,8 +11,8 @@ const CurrentTemp = () => {
         return isDay ? "./clearDark.png" : "./clearNightDark.png";
       case "light rain shower":
         return isDay ? "./sunnyRainDark.png" : "./nightRainDark.png";
-      case "cloudy":
-        return "cloud-icon";
+      case "partly cloudy":
+        return isDay ? "./partlyCloudyDay.png" : "./partlyCloudyNight.png";
       // Add more cases for other weather conditions
       default:
         return "default-icon";
