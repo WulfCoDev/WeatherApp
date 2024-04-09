@@ -52,6 +52,7 @@ interface WeatherData {
 interface WeatherContextType {
   weatherData: WeatherData | null;
   setWeatherData: React.Dispatch<React.SetStateAction<WeatherData | null>>;
+  fetchWeatherData: (location: string) => Promise<void>;
 }
 
 export const useWeather = () => {

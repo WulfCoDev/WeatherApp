@@ -28,7 +28,10 @@ const CurrentTemp = () => {
               {weatherData.location.name}, {weatherData.location.region}
             </p>
             <img
-              src={getWeatherIcon(weatherData.current.condition.text)}
+              src={getWeatherIcon(
+                weatherData.current.condition.text,
+                weatherData.current.is_day !== 0
+              )}
               alt=""
             />
             <p className="font-poppins text-4xl capitalize">
