@@ -1,5 +1,14 @@
+import Home from "./Home";
+import { WeatherProvider } from "./utils/RealTimeWeatherContext";
+
 function App() {
-  return <div className=" h-screen w-screen bg-red-500">App</div>;
+  return (
+    <WeatherProvider>
+      <div className="">
+        <Home />
+      </div>
+    </WeatherProvider>
+  );
 }
 
 export default App;
