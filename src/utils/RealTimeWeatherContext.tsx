@@ -73,6 +73,7 @@ export const WeatherProvider: React.FC<{ children: ReactNode }> = ({
   const fetchWeatherData = async (location: string) => {
     try {
       const result = await fetchRealTimeWeather(location);
+      console.log("API response:", result);
       setWeatherData(result);
     } catch (error) {
       console.error("Error fetching weather data:", error);
