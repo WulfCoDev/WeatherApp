@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useWeather } from "./utils/RealTimeWeatherContext";
+import { useWeather } from "../utils/RealTimeWeatherContext";
 
 const CurrentLocation = () => {
   const { weatherData, fetchWeatherData } = useWeather();
@@ -13,8 +13,12 @@ const CurrentLocation = () => {
         return isDay ? "./clearDark.png" : "./clearNightDark.png";
       case "light rain shower":
         return isDay ? "./sunnyRainDark.png" : "./nightRainDark.png";
+      case "light rain":
+        return isDay ? "./sunnyRainDark.png" : "./nightRainDark.png";
       case "partly cloudy":
         return isDay ? "./partlyCloudyDay.png" : "./partlyCloudyNight.png";
+      case "overcast":
+        return isDay ? "./overcastDay.png" : "./overcastNightDark.png";
       // Add more cases for other weather conditions
       default:
         return "default-icon";
@@ -37,13 +41,14 @@ const CurrentLocation = () => {
   }, [fetchWeatherData, isWeatherFetched, weatherData]);
 
   return (
-    <div className="text-white flex flex-col items-center bg-black/40 backdrop-blur-sm border border-gray-500 rounded-md m-4 p-4">
+    <div className="text-white flex flex-col items-center bg-black/5 backdrop-blur-sm border border-gray-500 rounded-md m-4">
       {weatherData ? (
-        <div className="p-4">
-          <div className="flex flex-col items-center">
+        <div className="">
+          <div className="flex flex-col items-center p-4">
             <p>
-              {weatherData.location.name}, {weatherData.location.region}
+              {weatherData.location.name}, {weatherData.location.region},
             </p>
+            <p>{weatherData.location.country}</p>
             <img
               src={getWeatherIcon(
                 weatherData.current.condition.text,
@@ -59,6 +64,9 @@ const CurrentLocation = () => {
               <span className="align-text-top text-[24px]">°</span>F
             </p>
           </div>
+          <p className="font-poppins text-sm text-end right-1 absolute">
+            Last updated: {weatherData.current.last_updated}
+          </p>
         </div>
       ) : (
         <p>No weather data available</p>

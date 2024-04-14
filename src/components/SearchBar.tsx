@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useWeather } from "./utils/RealTimeWeatherContext";
+import { useWeather } from "../utils/RealTimeWeatherContext";
 
 const LocationInputForm: React.FC = () => {
   const [location, setLocation] = useState("");

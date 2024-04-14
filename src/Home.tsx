@@ -1,6 +1,7 @@
-import CurrentLocation from "./CurrentLocation";
-import CurrentTemp from "./CurrentTemp";
-import LocationInputForm from "./SearchBar";
+import CurrentLocation from "./components/CurrentLocation";
+import CurrentTemp from "./components/CurrentTemp";
+import LocationInputForm from "./components/SearchBar";
+import UVIndex from "./components/UVI";
 
 const Home = () => {
   return (
@@ -8,6 +9,9 @@ const Home = () => {
       <LocationInputForm />
       <div>
         <CurrentLocation />
+      </div>
+      <div>
+        <UVIndex />
       </div>
     </div>
   );

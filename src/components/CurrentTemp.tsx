@@ -1,4 +1,4 @@
-import { useWeather } from "./utils/RealTimeWeatherContext";
+import { useWeather } from "../utils/RealTimeWeatherContext";
 
 const CurrentTemp = () => {
   const { weatherData } = useWeather();
