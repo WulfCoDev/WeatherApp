@@ -15,6 +15,8 @@ const CurrentLocation = () => {
         return isDay ? "./sunnyRainDark.png" : "./nightRainDark.png";
       case "light rain":
         return isDay ? "./sunnyRainDark.png" : "./nightRainDark.png";
+      case "moderate rain":
+        return isDay ? "./sunnyRainDark.png" : "./nightRainDark.png";
       case "partly cloudy":
         return isDay ? "./partlyCloudyDay.png" : "./partlyCloudyNight.png";
       case "overcast":
