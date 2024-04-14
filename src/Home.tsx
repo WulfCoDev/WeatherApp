@@ -1,3 +1,4 @@
+import CurrentLocation from "./CurrentLocation";
 import CurrentTemp from "./CurrentTemp";
 import LocationInputForm from "./SearchBar";
 
@@ -6,7 +7,7 @@ const Home = () => {
     <div className="bg-bg bg-cover bg-center bg-no-repeat flex flex-col h-screen">
       <LocationInputForm />
       <div>
-        <CurrentTemp />
+        <CurrentLocation />
       </div>
     </div>
   );

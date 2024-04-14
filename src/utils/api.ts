@@ -14,6 +14,7 @@ export async function fetchRealTimeWeather(location) {
   };
 
   try {
+    console.log("Getting weather for:", location);
     const response = await fetch(url, options);
     const result = await response.json();
     console.log(result);
