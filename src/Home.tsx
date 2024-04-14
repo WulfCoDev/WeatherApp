@@ -1,5 +1,4 @@
 import CurrentLocation from "./components/CurrentLocation";
-import CurrentTemp from "./components/CurrentTemp";
 import LocationInputForm from "./components/SearchBar";
 import UVIndex from "./components/UVI";
 
