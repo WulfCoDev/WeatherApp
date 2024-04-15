@@ -12,10 +12,10 @@ const WindInfo = () => {
     <div className="text-white p-2 flex flex-col items-center bg-black/5 backdrop-blur-sm border border-gray-500 rounded-md m-4">
       {wind !== null ? (
         <div className="space-x-2 w-full">
-          <p className="inline-block">
+          <p className="inline-block text-gray-400">
             <FaWind />
           </p>
-          <p className="inline-block font-poppins">Wind</p>
+          <p className="inline-block font-poppins text-gray-400">Wind</p>
           <div className="flex justify-between">
             <div className="w-2/3">
               <div className="border-b border-gray-400 flex items-center">
@@ -38,7 +38,7 @@ const WindInfo = () => {
                 </div>
               </div>
             </div>
-            <div className="flex justify-center items-center font-poppins w-1/3 text-4xl text-center">
+            <div className="flex justify-center items-center font-poppins w-1/3 text-5xl text-center">
               {weatherData.current.wind_dir}
               <GiCompass />
             </div>
