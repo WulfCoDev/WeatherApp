@@ -38,7 +38,7 @@ const WindInfo = () => {
                 </div>
               </div>
             </div>
-            <div className="flex justify-center items-center font-poppins w-1/3 text-5xl text-center">
+            <div className="flex flex-col justify-center items-center font-poppins w-1/3 text-5xl text-center">
               {weatherData.current.wind_dir}
               <GiCompass />
             </div>

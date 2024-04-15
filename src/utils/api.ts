@@ -1,9 +1,9 @@
 const apiKey = "cae9801a2bmshd5b08ef49349e51p1df54cjsna5248a6cf889";
 
 export async function fetchRealTimeWeather(location) {
-  const url = `https://weatherapi-com.p.rapidapi.com/current.json?q=${encodeURIComponent(
+  const url = `https://weatherapi-com.p.rapidapi.com/forecast.json?q=${encodeURIComponent(
     location
-  )}`;
+  )}&days=10`;
 
   const options = {
     method: "GET",
