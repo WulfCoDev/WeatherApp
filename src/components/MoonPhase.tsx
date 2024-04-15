@@ -3,8 +3,6 @@ import {
   WiMoonAltWaxingCrescent4,
   WiMoonrise,
   WiMoonset,
-  WiSunrise,
-  WiSunset,
 } from "react-icons/wi";
 import { PiMoonStarsLight } from "react-icons/pi";
 
