@@ -84,6 +84,16 @@ interface ForecastHour {
 interface ForecastDay {
   date: string;
   date_epoch: number;
+  astro: {
+    sunrise: string;
+    sunset: string;
+    moonrise: string;
+    moonset: string;
+    moon_phase: string;
+    moon_illumination: number;
+    is_moon_up: number;
+    is_sun_up: number;
+  };
   day: {
     maxtemp_c: number;
     maxtemp_f: number;
@@ -105,16 +115,6 @@ interface ForecastDay {
     daily_chance_of_snow: number;
     condition: Condition;
     uv: number;
-    astro: {
-      sunrise: string;
-      sunset: string;
-      moonrise: string;
-      moonset: string;
-      moon_phase: string;
-      moon_illumination: number;
-      is_moon_up: number;
-      is_sun_up: number;
-    };
   };
   hour: ForecastHour[];
 }

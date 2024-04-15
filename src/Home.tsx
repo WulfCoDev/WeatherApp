@@ -1,5 +1,6 @@
 import CurrentLocation from "./components/CurrentLocation";
 import FeelsLike from "./components/FeelsLike";
+import MoonPhase from "./components/MoonPhase";
 import Precipitation from "./components/Precipitation";
 import LocationInputForm from "./components/SearchBar";
 import UVIndex from "./components/UVI";
@@ -22,6 +23,7 @@ const Home = () => {
         <Visibility />
         <Precipitation />
       </div>
+      <MoonPhase />
     </div>
   );
 };

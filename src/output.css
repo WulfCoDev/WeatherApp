@@ -743,6 +743,10 @@ video {
   text-indent: 0.5rem;
 }
 
+.align-middle {
+  vertical-align: middle;
+}
+
 .align-text-top {
   vertical-align: text-top;
 }
@@ -793,6 +797,10 @@ video {
 .text-5xl {
   font-size: 3rem;
   line-height: 1;
+}
+
+.font-semibold {
+  font-weight: 600;
 }
 
 .capitalize {
