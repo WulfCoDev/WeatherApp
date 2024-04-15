@@ -4,6 +4,7 @@ export default {
   theme: {
     backgroundImage: {
       bg: "url('../src/assets/bg.jpg')",
+      compass: "url('../src/assets/compass.png')",
     },
     fontFamily: {
       poppins: "Poppins",

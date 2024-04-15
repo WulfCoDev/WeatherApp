@@ -1,6 +1,7 @@
 import CurrentLocation from "./components/CurrentLocation";
 import LocationInputForm from "./components/SearchBar";
 import UVIndex from "./components/UVI";
+import WindInfo from "./components/Wind";
 
 const Home = () => {
   return (
@@ -9,7 +10,8 @@ const Home = () => {
       <div>
         <CurrentLocation />
       </div>
-      <div>
+      <WindInfo />
+      <div className="flex justify-evenly">
         <UVIndex />
       </div>
     </div>
