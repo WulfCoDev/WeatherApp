@@ -1,5 +1,6 @@
 import CurrentLocation from "./components/CurrentLocation";
 import FeelsLike from "./components/FeelsLike";
+import HourlyForecast from "./components/HourlyForecast";
 import MoonPhase from "./components/MoonPhase";
 import Precipitation from "./components/Precipitation";
 import LocationInputForm from "./components/SearchBar";
@@ -14,6 +15,7 @@ const Home = () => {
       <div>
         <CurrentLocation />
       </div>
+      <HourlyForecast />
       <WindInfo />
       <div className="flex justify-evenly">
         <UVIndex />
