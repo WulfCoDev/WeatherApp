@@ -69,7 +69,7 @@ const HourlyForecast = () => {
           <p className="inline-block w-full mb-2 font-poppins text-gray-400 border-b border-gray-400">
             Hourly Forecast
           </p>
-          <div className="space-x-2 flex overflow-auto">
+          <div className="space-x-2 flex no-scrollbar overflow-auto">
             {displayedHours.map((hourlyData, index) => (
               <div
                 key={index}
